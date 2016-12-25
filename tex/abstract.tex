@@ -1,0 +1,33 @@
+%# -*- coding: utf-8-unix -*-
+%%==================================================
+%% abstract.tex for SJTU Master Thesis
+%%==================================================
+
+\begin{abstract}
+随着分布式电源（Distributed generator, DG）渗透率的不断提高，配电网从传统的无源网络变为有源配电网。大量逆变器接口型分布式电源（Inverter-interfaced DG, IIDG）的接入对电网的安全稳定运行产生日益重要的影响。为了防止电网故障期间IIDG大规模脱网给电网带来严重的不良影响，保证电网的安全稳定运行，并网规程要求，分布式电源在电力系统事故或扰动引起电压跌落时，在一定的电压跌落范围和时间间隔内，能够保证不脱网连续运行，甚至向电网注入额外的无功功率，从而支撑电网电压，实现故障穿越。而且，传统配电网中不对称故障发生的概率最高。因此，为了保证配电网的安全稳定运行，本文提出一种适用于有源配电网的自适应方向保护方案，并在不对称故障的故障穿越运行控制策略下讨论该保护方案具体实现的问题。
+
+相对于高压输电网保护，针对配电网的保护研究还比较薄弱。为此，本文首先对国内外有源配电网保护的发展进行了梳理，并根据有源配电网树状拓扑结构的特征，提出了一种原理简单、经济可靠的继电保护方案，该方案对于不同的故障元件、DG类型以及渗透率、配电网运行模式、配电网重构等都具有自适应性。与差动保护相比，本保护方案具有更优的经济性，适合在主动配电网中大量采用。
+
+接着，为满足并网规程的要求，本文提出一种能够满足并网规程的逆变型分布式电源的故障穿越运行控制策略，建立故障时逆变型分布式电源的等值电路，并在此基础上，研究控制策略的优化方法。通过仿真验证了控制策略和优化方法的有效性。研究结果表明，控制策略有助于提高逆变型分布式电源的故障穿越运行能力，改善故障特性，便于故障分析，为含逆变型分布式电源电网的继电保护原理研究提供参考。与已有研究的主要区别在于，本文提出的控制策略及其故障特征分析方法计及不同的变流器控制策略以及分布式电源的受控电流源特征，能够满足继电保护原理分析以及整定计算需要。
+
+最后，本文讨论了新保护方案关键元件的实现问题，主要研究了方向元件。由于变流器接口型DG提供的短路电流水平较小，其相、序特征皆与传统配电网有较大区别，这使得常规三段式电流保护、方向元件的选择性、速动性、灵敏性得不到保障。另外，配电网中的潮流方向具有很大的随机性。为此，本文分析了传统方向元件在有源配电网中的适应性问题，并提出一种适用于有源配电网的配电网方向元件原理。
+
+本学位论文在中国南方电网有限责任公司科技项目“新型城市配电网自适应保护关键技术研究与试点应用”的支持下完成。
+
+\keywords{\large 有源配电网 \quad 自适应保护 \quad 故障穿越 \quad 控制策略 \quad 故障特征 \quad 方向元件}
+\end{abstract}
+
+\begin{englishabstract}
+
+With the continuous increase of the distributed power (DG), the distribution network transforms from the traditional passive network to the active distribution network. A large number of Inverter-Interfaced DG (IIDG) accesses have an increasingly important impact on the safe and stable operation of the power grid. In order to prevent the IIDG large-scale network disconnection during the power grid to bring serious adverse effects to ensure the safe and stable operation of the power grid, grid-connected regulations require that the distributed power supply in the power system accident or disturbance caused by voltage drop in a certain voltage drop Range and time interval, to ensure that no off-line continuous operation, or even to the grid into the additional reactive power, so as to support the grid voltage to achieve fault crossing. Moreover, the traditional distribution network in the probability of the highest asymmetric failure. Therefore, in order to ensure the safe and stable operation of the distribution network, this paper proposes an adaptive directional protection scheme suitable for active distribution networks, and discusses the implementation of the protection scheme under asymmetric fault faulty operation control strategy.
+
+Compared with the protection of high-voltage transmission network, the research on protection of distribution network is still weak. In this paper, firstly, the development of active power distribution network protection at home and abroad is sorted out, and a simple and economical relay protection scheme is proposed according to the characteristics of tree topology of active power distribution network. The scheme is adaptable to different fault components, DG type and permeability, distribution network operation mode, distribution network reconfiguration and so on. Compared with the differential protection, the protection scheme has better economy, suitable for active use in a large number of distribution network.
+
+Then, in order to meet the requirement of grid-connected regulation, this paper proposes a fault-tolerant distributed fault-tolerant distributed power control strategy to establish the equivalent circuit of inverter distributed power supply. Based on this, the optimization method of control strategy is studied. The effectiveness of the control strategy and optimization method is verified by simulation. The research results show that the control strategy can improve the running capability of the fault - tolerant distributed power supply, improve the fault characteristic and facilitate the fault analysis, and provide reference for the relay protection principle of inverter distributed power network. The main difference between the proposed control strategy and the fault feature analysis method is that the different control strategies of the converter and the characteristics of the controlled current source of the distributed power supply can meet the requirements of the relay protection principle analysis and setting calculation need.
+
+Finally, this paper discusses the implementation of the key components of the new protection scheme, and mainly studies the directional components. Because of the short circuit current level provided by converter interface DG, the phase and sequence features are different from the traditional distribution network, which makes the conventional three-stage current protection, directional element selectivity, Sensitivity can not be guaranteed. In addition, the power flow direction in the distribution network is highly random. Therefore, this paper analyzes the adaptability of the traditional directional elements in the active distribution network, and proposes a principle of the directional components of the distribution network which is suitable for the active distribution network.
+
+This dissertation is supported by the "Research and Application of Key Technologies for Adaptive Protection of New Urban Distribution Network", which is a project of China Southern Power Grid Co., Ltd.
+
+\englishkeywords{\large active distribution network,adaptive protection,fault crossing,control strategy,fault feature,direction element}
+\end{englishabstract}
