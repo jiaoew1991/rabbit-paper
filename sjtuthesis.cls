@@ -47,7 +47,7 @@
 % Segment 1. Import LaTeX packages.
 %==========
 
-\RequirePackage[centering,a4paper,body={16cm,22cm}]{geometry} %设置版面
+\RequirePackage[centering,a4paper,margin=3cm,body={16cm,22cm}]{geometry} %设置版面
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 \RequirePackage{fontspec}
@@ -74,6 +74,7 @@
 \RequirePackage{algorithm, algorithmicx, algpseudocode}
 \RequirePackage{siunitx}
 \RequirePackage{tikz}
+\RequirePackage{titlesec}
 \usetikzlibrary{shapes.geometric, arrows}
 
 %==========
@@ -123,7 +124,7 @@
 \setmainfont{TeX Gyre Termes}
 
 %% 行距缩放因子
-\linespread{1.3}
+\linespread{1.4}
 
 %% CTeX Settings
 % 名称：目录、表格索引、插图索引、算法、算法索引、代码
@@ -164,6 +165,10 @@
 	afterskip={1.0ex \@plus .2ex},
 	}
 }
+
+% \titlespacing{\chapter}{0pt}{1cm}{3cm}
+\titlespacing{\section}{0pt}{*4}{*2}
+\titlespacing{\subsection}{0pt}{*4}{*2}
 
 % bullets in the item
 \renewcommand{\labelitemi}{\ensuremath{\bullet}}
